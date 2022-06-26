@@ -1,0 +1,126 @@
+body {
+  background-image: url(img/img1.jpg);
+  background-size: cover;
+  color: #fff;
+  height: 600px;
+}
+button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid white;
+  font-weight: normal;
+  font-size: 15px;
+  margin-top: 25px;
+  animation: borderSize 5s infinite linear;
+  cursor: pointer;
+}
+.btn1 {
+  position: fixed;
+  left: 20px;
+}
+.btn2 {
+  position: fixed;
+  right: 20px;
+}
+h1 {
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  position: fixed;
+  transform: translateY(-50%);
+  font-style: italic;
+  font-size: 50px;
+  animation: position 3s infinite;
+}
+@keyframes position {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes borderSize {
+  0% {
+    border-radius: 0px;
+    padding: 5px 10px;
+  }
+  50% {
+    border-radius: 20px;
+    padding: 3px 5px;
+  }
+  100% {
+    border-radius: 0px;
+    padding: 5px 10px;
+  }
+}
+.bubble {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  bottom: -30px;
+  /* animation: bubblemove 4s infinite linear; */
+  margin: 10px;
+}
+
+@keyframes bubblemove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -250px);
+  }
+}
+.img1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: bubblemove 3s infinite linear;
+}
+.img2 {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  animation: bubblemove 5s infinite linear;
+}
+.img3 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  animation: bubblemove 6s infinite linear;
+}
+.img4 {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  animation: bubblemove 6.5s infinite linear;
+}
+.img5 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: bubblemove 7s infinite linear;
+}
+.img6 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  animation: bubblemove 3.5s infinite linear;
+}
+.img7 {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  animation: bubblemove 4.5s infinite linear;
+}
+.img8 {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  animation: bubblemove 7.5s infinite linear;
+}
